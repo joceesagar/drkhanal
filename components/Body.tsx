@@ -3,7 +3,11 @@ import React from 'react'
 
 function Body() {
     return (
-        <div>Body</div>
+        <div className='mt-20'>
+            <div className=''>
+                <div className='h-[508px] w-[353px] bg-black'></div>
+            </div>
+        </div>
     )
 }
 
