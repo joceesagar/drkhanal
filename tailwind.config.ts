@@ -12,6 +12,9 @@ const config: Config = {
             colors: {
                 'topbar': '#364049'
             },
+            fontFamily: {
+                'righteous': ['Righteous', 'sans-serif'],
+            }
 
         },
     },

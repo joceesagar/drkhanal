@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Righteous } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 const inter = Inter({
   subsets: ["latin"],
 });
+
+const righteous = Righteous({
+  weight: "400",
+  subsets: ["latin"]
+})
 
 
 export const metadata: Metadata = {
