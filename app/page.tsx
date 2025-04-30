@@ -6,10 +6,10 @@ import React from 'react'
 
 function HomePage() {
   return (
-    <div className='h-[100vh] w-[100vw] bg-white'>
+    <div className='bg-white'>
       <Topbar />
       <Hero />
-      <Footer />
+      <Body />
     </div>
   )
 }
