@@ -9,7 +9,7 @@ function NavBar() {
             <Link href={''} className='font-bold'>CV</Link>
             <Link href={''} className='font-bold'>Certifications</Link>
             <Link href={''} className='font-bold'>FAQ</Link>
-            <Link href={''} className='font-bold'>Contact</Link>
+            <Link href={'/contact'} className='font-bold'>Contact</Link>
         </div>
     )
 }

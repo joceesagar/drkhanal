@@ -18,7 +18,7 @@ function Hero() {
                 <div className='flex gap-14 items-center justify-center'>
                     {/* NAVBAR */}
                     <NavBar />
-                    <Button className='bg-[#2660e1] font-bold rounded-3xl px-6 py-7'>Book an Appointment</Button>
+                    <Button className='bg-[#2660e1] font-bold rounded-[20px] px-6 py-7'>Book an Appointment</Button>
                 </div>
             </div>
             <div className='bg-white rounded-[11px] h-[78px] w-[1161px] flex border-[1px] border-[#d4d4d4] items-center px-5 justify-center gap-3 mb-8'>
