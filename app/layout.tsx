@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Righteous } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Righteous, Merriweather, Roboto } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,11 +14,24 @@ const geistMono = Geist_Mono({
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter"
 });
 
 const righteous = Righteous({
   weight: "400",
-  subsets: ["latin"]
+  subsets: ["latin"],
+  variable: "--font-righteous"
+})
+
+const merriweather = Merriweather({
+  weight: "700",
+  subsets: ["latin"],
+  variable: "--font-marriweather"
+})
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto"
 })
 
 
@@ -35,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${righteous.variable} ${merriweather.variable} ${roboto.variable}antialiased`}
       >
         {children}
       </body>

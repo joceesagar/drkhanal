@@ -10,6 +10,7 @@ function HomePage() {
       <Topbar />
       <Hero />
       <Body />
+      <Footer />
     </div>
   )
 }

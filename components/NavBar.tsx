@@ -3,8 +3,8 @@ import React from 'react'
 
 function NavBar() {
     return (
-        <div className='flex gap-14'>
-            <Link href={''} className='font-bold'>About Me</Link>
+        <div className='flex gap-14 font-inter'>
+            <Link href={'/about'} className='font-bold'>About Me</Link>
             <Link href={''} className='font-bold'>Family</Link>
             <Link href={''} className='font-bold'>CV</Link>
             <Link href={''} className='font-bold'>Certifications</Link>
