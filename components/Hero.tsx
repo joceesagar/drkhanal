@@ -12,7 +12,7 @@ const righteous = Righteous({
 function Hero() {
     return (
         // bg-center
-        <div className='h-[944px] bg-[url(/Hero.png)] bg-cover bg-no-repeat flex flex-col items-center justify-between'>
+        <div className='h-[944px] bg-[url(/home/Hero.png)] bg-cover bg-no-repeat flex flex-col items-center justify-between'>
             <div className='flex gap-48 mx-auto pt-[80px] items-center'>
                 <div className='font-righteous text-[31px]'>Dr.Sudhir Khanal</div>
                 <div className='flex gap-14 items-center justify-center'>

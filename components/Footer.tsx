@@ -32,9 +32,9 @@ function Footer() {
             </div>
             <div className='flex flex-col gap-6'>
                 <div className='flex justify-end gap-[44px] mr-[470px]'>
-                    <Link href={''}><Image src={'/body/facebook.svg'} alt='' height={49} width={49} /></Link>
-                    <Link href={''}><Image src={'/body/youtube.svg'} alt='' height={49} width={49} /></Link>
-                    <Link href={''}><Image src={'/body/instagram.svg'} alt='' height={49} width={49} /></Link>
+                    <Link href={''}><Image src={'/home/facebook.svg'} alt='' height={49} width={49} /></Link>
+                    <Link href={''}><Image src={'/home/youtube.svg'} alt='' height={49} width={49} /></Link>
+                    <Link href={''}><Image src={'/home/instagram.svg'} alt='' height={49} width={49} /></Link>
                 </div>
                 <div className='flex gap-[400px] justify-center'>
                     <p className='text-[#6d6c6c] text-[16px] font-[400] font-roboto'>2025 Dr. Sudhir Khanal.  All Rights Reserved.</p>
