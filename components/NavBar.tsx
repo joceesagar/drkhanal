@@ -8,7 +8,7 @@ function NavBar() {
             <Link href={'/family'} className='font-bold'>Family</Link>
             <Link href={''} className='font-bold'>CV</Link>
             <Link href={''} className='font-bold'>Certifications</Link>
-            <Link href={''} className='font-bold'>FAQ</Link>
+            <Link href={'/FAQs'} className='font-bold'>FAQ</Link>
             <Link href={'/contact'} className='font-bold'>Contact</Link>
         </div>
     )

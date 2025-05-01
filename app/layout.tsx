@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Righteous, Merriweather, Roboto, Inder, Inconsolata } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Righteous, Merriweather, Roboto, Inder, Inconsolata, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -45,6 +45,12 @@ const inconsolata = Inconsolata({
   variable: "--font-inconsolata"
 })
 
+const ibm_plex_mono = IBM_Plex_Mono({
+  weight: '500',
+  subsets: ["latin"],
+  variable: "--font-plex_mono"
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -59,7 +65,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${righteous.variable} ${merriweather.variable} ${roboto.variable} ${inder.variable} ${inconsolata.variable}antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${righteous.variable} ${merriweather.variable} ${roboto.variable} ${inder.variable} ${inconsolata.variable} ${ibm_plex_mono.variable}antialiased`}
       >
         {children}
       </body>
