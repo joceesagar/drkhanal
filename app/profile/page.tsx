@@ -1,4 +1,3 @@
-import { Dot } from 'lucide-react'
 import React from 'react'
 
 function page() {
@@ -25,7 +24,6 @@ function page() {
                                 <div className='w-[223px] h-[8px] bg-black rounded-[20px]' />
                                 <div className='w-[110px] h-[8px] bg-black rounded-[20px]' />
                                 <div className='w-[154px] h-[8px] bg-black rounded-[20px]' />
-
                             </div>
                             {/* LABELS */}
                             <div className='flex justify-end flex-col items-start mx-auto'>
@@ -33,7 +31,6 @@ function page() {
                                 <p className='font-inter text-2xl font-[400]'>Spanish</p>
                                 <p className='font-inter text-2xl font-[400]'>Arabic</p>
                             </div>
-
                         </div>
                     </div>
                     {/* EDUCATION */}
@@ -47,110 +44,73 @@ function page() {
                             <p className='font-inter font-[400] text-[24px] '>BS BMS</p>
                             <p className='font-inter font-[300] text-xl '>20XX - City University</p>
                             <p className='font-inter font-[300] text-xl '>20XX - City, Country</p>
-
                         </div>
                     </div>
-
-
                 </div>
+
                 {/* SEPERATOR */}
                 <div className='w-[1px] h-[1350px] bg-black ' />
 
                 {/* EXPERIENCE */}
                 <div className='flex mt-16 gap-10 flex-col'>
                     <p className='font-inter font-[600] text-[29px]'>EXPERIENCE</p>
+
+                    {/* EMT */}
                     <div>
                         <div>
                             <span className='font-inter font-[500] text-[29px]'>EMERGENCY MEDICAL TECHNICIAN</span>
                             <span className='font-inter font-[300] text-[29px]'> | Red Cross | NY, USA</span>
                         </div>
                         <p className='text-[#707070] text-[24px] font-inter mb-5'>Sept. 20XX - OCT. 20XX</p>
-                        <div className='flex flex-col items-start'>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Respond promptly to emergency calls, assessing and providing immediate medical care to patients.</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Administer life-saving interventions, including CPR, defibrillation, and medication administration.</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Maintain accurate and detailed patient records.</p>
-                            </div>
-                        </div>
+                        <ul className='list-disc pl-8 flex flex-col gap-4'>
+                            <li className='font-inter text-[24px]'>Respond promptly to emergency calls, assessing and providing immediate medical care to patients.</li>
+                            <li className='font-inter text-[24px]'>Administer life-saving interventions, including CPR, defibrillation, and medication administration.</li>
+                            <li className='font-inter text-[24px]'>Maintain accurate and detailed patient records.</li>
+                        </ul>
                     </div>
 
+                    {/* Paramedic */}
                     <div>
                         <div>
                             <span className='font-inter font-[500] text-[29px]'>PARAMEDIC</span>
                             <span className='font-inter font-[300] text-[29px]'> | City General Hospital | NY, USA</span>
                         </div>
                         <p className='text-[#707070] text-[24px] font-inter mb-5'>Sept. 20XX - Oct. 20XX</p>
-                        <div className='flex flex-col items-start'>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Conduct advanced assessments to determine the nature and severity of patients’ conditions.</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Administer life support interventions, including intubation and cardiac monitoring.</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Mentored and supervised junior medical staff.
-                                </p>
-                            </div>
-                        </div>
+                        <ul className='list-disc pl-8 flex flex-col gap-4'>
+                            <li className='font-inter text-[24px]'>Conduct advanced assessments to determine the nature and severity of patients’ conditions.</li>
+                            <li className='font-inter text-[24px]'>Administer life support interventions, including intubation and cardiac monitoring.</li>
+                            <li className='font-inter text-[24px]'>Mentored and supervised junior medical staff.</li>
+                        </ul>
                     </div>
 
+                    {/* Medical Assistant */}
                     <div>
                         <div>
                             <span className='font-inter font-[500] text-[29px]'>MEDICAL ASSISTANT</span>
                             <span className='font-inter font-[300] text-[29px]'> | Health Clinic | NY, USA</span>
                         </div>
                         <p className='text-[#707070] text-[24px] font-inter mb-5'>Sept. 20XX – Oct. 20XX</p>
-                        <div className='flex flex-col items-start'>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Assist physicians in routine examinations, minor surgical procedures, and patient education.</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Managed patient records and ensured accurate documentation of medical histories and vital signs.</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Facilitated health care screenings and vaccination programs within the community.
-                                </p>
-                            </div>
-                        </div>
+                        <ul className='list-disc pl-8 flex flex-col gap-4'>
+                            <li className='font-inter text-[24px]'>Assist physicians in routine examinations, minor surgical procedures, and patient education.</li>
+                            <li className='font-inter text-[24px]'>Managed patient records and ensured accurate documentation of medical histories and vital signs.</li>
+                            <li className='font-inter text-[24px]'>Facilitated health care screenings and vaccination programs within the community.</li>
+                        </ul>
                     </div>
 
-                    {/* SKILLS */}
+                    {/* Skills */}
                     <div>
                         <p className='font-inter font-[500] text-[29px]'>SKILLS</p>
-                        <div className='flex flex-col items-start'>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Advanced Life Support</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Triage and Patient Assessment</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Basic Life Support</p>
-                            </div>
-                            <div className='flex justify-center items-center'>
-                                <Dot size={50} />
-                                <p className='font-inter text-[24px]'>Emergency Medical Procedures</p>
-                            </div>
-                        </div>
+                        <ul className='list-disc pl-8 flex flex-col gap-4'>
+                            <li className='font-inter text-[24px]'>Advanced Life Support</li>
+                            <li className='font-inter text-[24px]'>Triage and Patient Assessment</li>
+                            <li className='font-inter text-[24px]'>Basic Life Support</li>
+                            <li className='font-inter text-[24px]'>Emergency Medical Procedures</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            {/* Publications */}
             <div className='px-20'>
                 <p className='font-inter font-[500] text-[29px] mb-5'>Publications</p>
                 <p className='font-inter text-[24px]'>Around 30 publications as lead and co-author in various scientific peer-reviewed journal related to child health and immunization (h-index 11, i10-index 12 and Research Interest score of 158.4, as of 10 October 2022)</p>

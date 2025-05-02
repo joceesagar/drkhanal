@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRightIcon, ChevronRightIcon, Dot } from 'lucide-react'
+import { ArrowRightIcon, ChevronRightIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -129,7 +129,7 @@ function page() {
                                 Academic Growth
                             </p>
 
-                            <div className="flex flex-col items-start text-[#6d6c6c] space-y-4 mt-4">
+                            <ul className="flex flex-col items-start text-[#6d6c6c] space-y-6 mt-4 list-disc pl-6">
                                 {[
                                     "PgDip in Cognitive-Behavioural Therapy (Distinction)",
                                     "Interpersonal Psychotherapy - Adolescent Skills Training (IPT-AST)",
@@ -137,14 +137,12 @@ function page() {
                                     "MSc Clinical Psychology and Mental Health (Distinction)",
                                     "BSc (Hons) in Psychology (First Class)",
                                 ].map((text, index) => (
-                                    <div key={index} className="flex items-start space-x-3">
-                                        <Dot size={30} className=" text-[#6d6c6c]" />
-                                        <p className="mt-1 font-inter text-[16px] leading-relaxed text-start w-[504px]">
-                                            {text}
-                                        </p>
-                                    </div>
+                                    <li key={index} className="font-inter text-[16px] leading-relaxed w-[504px]">
+                                        {text}
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
+
                         </div>
 
                         <Button className="w-[180px] h-[51px] px-[43px] py-[16px] rounded-4xl font-inder text-[15px] bg-white border-2 border-black text-black shadow-[0px_4px] shadow-[#00000040]">
