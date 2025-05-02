@@ -1,7 +1,5 @@
 import { Dot } from 'lucide-react'
 import React from 'react'
-import { GiBullets } from 'react-icons/gi'
-import { RxListBullet } from 'react-icons/rx'
 
 function page() {
     return (

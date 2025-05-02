@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowBigLeftIcon, ArrowRightIcon, ChevronRightIcon, Dot } from 'lucide-react'
+import { ArrowRightIcon, ChevronRightIcon, Dot } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -112,7 +112,7 @@ function page() {
                 <div className='w-[385px] flex flex-col gap-11'>
                     <p className='text-[#ff0f1c] font-inter font-[400] text-[12px]'>TRACK YOUR PROGRESS</p>
                     <Link href={''} className='font-meriweather font-[400] text-[24px] underline text-[#3d3d3d]'>Neonatal Sepsis as a Major Cause of Mobidity in a Tertiary Center in Kathmandu</Link>
-                    <p className='font-meriweather font-[400] text-[14px] text-[#3d3d3d]'>Neonatal sepsis causes high morbidity and mortality of newborns. The study aims to study the predictors and clinical, haematological and bacteriological factors of neonatal sepsis. Methods: A descriptive cross sectional study was conducted in a Neonatal Intensive Care Unit (NICU) of Paropakar Maternity and Women's Hospital.</p>
+                    <p className='font-meriweather font-[400] text-[14px] text-[#3d3d3d]'>Neonatal sepsis causes high morbidity and mortality of newborns. The study aims to study the predictors and clinical, haematological and bacteriological factors of neonatal sepsis. Methods: A descriptive cross sectional study was conducted in a Neonatal Intensive Care Unit (NICU) of Paropakar Maternity and Women&apos;s Hospital.</p>
                 </div>
                 <Image src={'/academics/babyFoot.png'} alt='' height={307} width={472} className='rounded-2xl' />
             </div>

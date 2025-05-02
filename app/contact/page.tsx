@@ -16,7 +16,7 @@ function page() {
                 <div className='ml-[57px] flex flex-col gap-[43px]'>
                     <p className='font-inder text-[#14abac] text-[14px]'>GENERAL INFORMATION</p>
                     <div className='flex gap-[20px] flex-col'>
-                        <p className='font-inder text-[40px] w-[357px]'>We're here for you And your feet.</p>
+                        <p className='font-inder text-[40px] w-[357px]'>We&apos;re here for you And your feet.</p>
                         <p className='font-inder text-[14px] w-[493px]'>See the full details of clinic hours and contact information below. Use the booking buttons located across this site to book your appointment today.</p>
                     </div>
                     <div className='flex gap-[110px]'>
@@ -43,7 +43,7 @@ function page() {
                 <div className='flex flex-col gap-[41px] mt-6 items-start'>
                     <div className='flex flex-col gap-8'>
                         <p className='font-inder text-[14px] text-[#ff0b0b]'>WHO CAN I HELP?</p>
-                        <p className='w-[670px] font-inder text-[32px]'>Your health is not a destination, it’s a journey.</p>
+                        <p className='w-[670px] font-inder text-[32px]'>Your health is not a destination, it&apos;s a journey.</p>
                         <div className='w-[523px] font-inder text-[15px] flex flex-col gap-4 '>
                             <p>Although you may be currently struggling with an illness or symptoms, my focus is on restoring health rather than just focusing on the disease. This approach may be different than what you are used to but it is far superior for improving your overall quality of life and reducing your future risk of chronic disease.</p>
                             <p>I only work with people who are ready to make changes and who I know I can help. If I do not think that I can help you I will refer you to someone or something that can.

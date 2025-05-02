@@ -1,13 +1,7 @@
-import { Righteous } from 'next/font/google';
 import React from 'react'
 import NavBar from './NavBar';
 import { Button } from './ui/button';
 import Link from 'next/link';
-
-const righteous = Righteous({
-    weight: "400",
-    subsets: ["latin"]
-});
 
 function Hero() {
     return (

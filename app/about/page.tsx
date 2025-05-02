@@ -19,7 +19,7 @@ function page() {
             <div className='flex flex-col gap-[37px]'>
                 <div className='flex flex-col gap-[37px]'>
                     <h1 className='font-inder font-[400] text-[40px] text-center'>Individualized health consulting</h1>
-                    <p className='w-[1204px] mx-auto font-inter font-[400] text-[20px] leading-8'>Dr. Khanal's academic credentials reflect his commitment to lifelong learning and public health excellence. He earned his PhD through international programs at Universidad Azteca (Azteca University) and has pursued advanced studies in Public Health Policy and Planning (International Health) at the Johns Hopkins University. His educational background also includes degrees from Manipal College of Medical Sciences, Northern University Bangladesh, and Kathmandu Valley Campus.</p>
+                    <p className='w-[1204px] mx-auto font-inter font-[400] text-[20px] leading-8'>Dr. Khanal&apos;s academic credentials reflect his commitment to lifelong learning and public health excellence. He earned his PhD through international programs at Universidad Azteca (Azteca University) and has pursued advanced studies in Public Health Policy and Planning (International Health) at the Johns Hopkins University. His educational background also includes degrees from Manipal College of Medical Sciences, Northern University Bangladesh, and Kathmandu Valley Campus.</p>
                 </div>
                 <Button className='w-[180px] h-[51px] px-[43px] py-[16px] rounded-4xl mx-auto font-inder text-[15px] bg-white border-2 border-black text-black shadow-[0px_4px] shadow-[#00000040]'>How it works</Button>
             </div>
@@ -48,7 +48,7 @@ function page() {
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-12'>
-                    <p className='w-[1072px] font-inter font-[400] text-[20px] text-center'>Originally from Biratnagar, Dr. Khanal's journey from St. Joseph’s School to international leadership exemplifies dedication, expertise, and service. He is married and continues to contribute meaningfully to the global public health community.</p>
+                    <p className='w-[1072px] font-inter font-[400] text-[20px] text-center'>Originally from Biratnagar, Dr. Khanal&apos;s journey from St. Joseph’s School to international leadership exemplifies dedication, expertise, and service. He is married and continues to contribute meaningfully to the global public health community.</p>
                     <Button className='bg-[#0055c2] rounded-4xl px-6 py-6 font-[600] font-inter'>Start Application</Button>
                     <p className='font-serif font-[400] text-[14px]'>*Click the button above and complete a quick application to receive an email with more information.</p>
                 </div>

@@ -3,8 +3,12 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L, { LatLngExpression, Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
+interface IconDefaultWithPrivateMethod extends L.Icon.Default {
+    _getIconUrl?: () => string;
+}
+
 // Fix for marker icons in Leaflet
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+delete (L.Icon.Default.prototype as IconDefaultWithPrivateMethod)._getIconUrl;
 
 
 // Define custom icon
