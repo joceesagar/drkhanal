@@ -20,13 +20,13 @@ function Footer() {
                     <Link href={''} className='text-[#6d6c6c] text-[16px] font-[400] font-roboto'>LinkedIn</Link>
                 </div>
                 <div className='flex flex-col gap-[19px]'>
-                    <p className='font-[500] text-[20px] text-black'>Company</p>
+                    <p className='font-[500] text-[20px] text-black font-roboto'>Company</p>
                     <Link href={''} className='text-[#6d6c6c] text-[16px] font-[400] font-roboto'>Team</Link>
                     <Link href={''} className='text-[#6d6c6c] text-[16px] font-[400] font-roboto'>Success stories</Link>
                     <Link href={''} className='text-[#6d6c6c] text-[16px] font-[400] font-roboto'>Giving back</Link>
                 </div>
                 <div className='flex flex-col gap-[19px]'>
-                    <p className='font-[500] text-[20px] text-black'>Help & Support</p>
+                    <p className='font-[500] text-[20px] text-black font-roboto'>Help & Support</p>
                     <Link href={''} className='text-[#6d6c6c] text-[16px] font-[400] font-roboto'>Common questions</Link>
                     <Link href={''} className='text-[#6d6c6c] text-[16px] font-[400] font-roboto'>Contact</Link></div>
             </div>
