@@ -1,8 +1,8 @@
-import FAQ_Accordin from '@/components/FAQ_Accordin'
-import FAQ_Accordin_Bottom from '@/components/FAQ_Accordin_Bottom'
-import { Accordion } from '@/components/ui/accordion'
-import Image from 'next/image'
-import React from 'react'
+import FAQ_Accordin from '@/components/FAQ_Accordin';
+import FAQ_Accordin_Bottom from '@/components/FAQ_Accordin_Bottom';
+import { Accordion } from '@/components/ui/accordion';
+import Image from 'next/image';
+import React from 'react';
 
 const leftColumn = [
     {
@@ -41,7 +41,7 @@ const leftColumn = [
         content: "Appointment will be scheduled"
     },
 
-]
+];
 
 const rightColumn = [
     {
@@ -74,7 +74,7 @@ const rightColumn = [
         trigger: "Can you help me with (insert your health problem)?",
         content: "Appointment will be scheduled"
     },
-]
+];
 
 const imageDescription = [
     {
@@ -137,60 +137,77 @@ const accordin = [
 
 function FAQs() {
     return (
-        <div className='flex flex-col items-center mt-[49px] gap-[114px]'>
-            <h1 className='font-meriweather font-[400] text-[40px] text-center'>Frequently Asked Question</h1>
-            <div className='flex flex-col gap-12'>
-                <div className='grid grid-cols-2 gap-x-[57px]'>
-                    <Accordion type="single" collapsible>
+        <div className='flex flex-col items-center mt-12 lg:mt-[49px] gap-16 lg:gap-[114px] px-6 lg:px-0'>
+            <h1 className='font-meriweather font-[400] text-3xl lg:text-[40px] text-center'>
+                Frequently Asked Question
+            </h1>
+            <div className='flex flex-col gap-8 lg:gap-12 max-w-[1200px] w-full'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-[30px]'>
+                    <Accordion type="single" collapsible className='w-full'>
                         {leftColumn.map((item) => (
                             <FAQ_Accordin
                                 key={item.index}
                                 trigger={item.trigger}
                                 content={item.content}
                                 value={item.index}
+                                className="w-full lg:w-[560px]"
                             />
                         ))}
                     </Accordion>
-                    <Accordion type="single" collapsible>
+                    <Accordion type="single" collapsible className='w-full'>
                         {rightColumn.map((item) => (
                             <FAQ_Accordin
                                 key={item.index}
                                 trigger={item.trigger}
                                 content={item.content}
                                 value={item.index}
+                                className="w-full lg:w-[560px]"
                             />
                         ))}
                     </Accordion>
                 </div>
-                <div className='flex flex-col items-center'>
-                    <p className='font-inder text-4xl'>Download our Free Health App</p>
-                    <Image src={'/FAQs/image.png'} alt='' width={475} height={86} content='cover' />
+                <div className='flex flex-col items-center gap-3'>
+                    <p className='font-inder text-2xl md:text-4xl text-center'>Download our Free Health App</p>
+                    <div className='w-full flex justify-center'>
+                        <Image src={'/FAQs/image.png'} alt='' width={300} height={54} content='cover' />
+                    </div>
                 </div>
             </div>
-            <div className='flex items-center justify-center gap-[80px]'>
-                {imageDescription.map((d, index) =>
-                    <div key={index} className='flex flex-col items-center justify-center gap-[51px]'>
-                        <Image src={d.imageUrl} alt='' height={d.imageHeight} width={d.imageWeight} />
-                        <p className={`text-[#7d7979] w-[271px] font-ibm_plex_mono text-center`}>{d.description} </p>
+            <div className='flex flex-col md:flex-row items-center justify-center gap-12 md:gap-[80px] max-w-[1200px] px-6 md:px-0'>
+                {imageDescription.map((d, index) => (
+                    <div key={index} className='flex flex-col items-center justify-center gap-8 md:gap-[51px] w-full md:w-auto text-center'>
+                        <Image src={d.imageUrl} alt='' height={d.imageHeight} width={d.imageWeight} style={{ objectFit: 'contain' }} />
+                        <p className={`text-[#7d7979] font-ibm_plex_mono text-sm md:text-base w-full md:w-[${d.descriptionWidth}px]`}>
+                            {d.description}
+                        </p>
                     </div>
-                )}
+                ))}
             </div>
 
-            <div className=' w-full bg-[url(/FAQs/gradiantBackground.png)] bg-cover bg-center bg-no-repeat pt-[86px] px-[103px] flex items-center justify-center gap-20'>
-                <div className='flex flex-col gap-8'>
-                    <p className='font-meriweather font-[400] text-[14px] '>GOT A QUESTIONS?</p>
+            <div className='w-full bg-[url(/FAQs/gradiantBackground.png)] bg-cover bg-center bg-no-repeat py-10 md:py-[86px] px-6 md:px-[103px] flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20'>
+                <div className='flex flex-col items-center gap-6 md:gap-8 text-center'>
+                    <p className='font-meriweather font-[400] text-sm md:text-[14px] '>GOT A QUESTIONS?</p>
                     <div>
-                        <p className='font-meriweather font-[400] text-[40px]'>Frequently Asked</p>
-                        <p className='font-meriweather font-[700] text-[40px]'>Questions</p>
+                        <p className='font-meriweather font-[400] text-3xl md:text-[40px]'>Frequently Asked</p>
+                        <p className='font-meriweather font-[700] text-3xl md:text-[40px]'>Questions</p>
                     </div>
-                    <Image src={'/FAQs/question.png'} alt='' height={408} width={488} />
+                    <div className='w-full flex justify-center'>
+                        <Image src={'/FAQs/question.png'} alt='' height={200} width={244} content='cover' />
+                    </div>
                 </div>
-                <div>
-                    {accordin.map((d) => <FAQ_Accordin_Bottom trigger={d.trigger} content={d.content} value={d.index} key={d.index} />)}
+                <div className='w-full max-w-[600px]'>
+                    {accordin.map((d) => (
+                        <FAQ_Accordin_Bottom
+                            trigger={d.trigger}
+                            content={d.content}
+                            value={d.index}
+                            key={d.index}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default FAQs
+export default FAQs;

@@ -6,7 +6,7 @@ import React from 'react'
 
 function HomePage() {
   return (
-    <div className='bg-white'>
+    <div className='bg-white w-full overflow-x-hidden'>
       <Topbar />
       <Hero />
       <Body />
