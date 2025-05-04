@@ -25,7 +25,7 @@ const position: LatLngExpression = [43.5893, -79.6441];
 
 const LeafletMap = () => {
     return (
-        <MapContainer center={position} zoom={13} style={{ height: '60vh', width: '30vw', borderRadius: '20px', overflow: 'hidden' }}>
+        <MapContainer center={position} zoom={13} style={{ height: '100%', width: '100%' }}>
             <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

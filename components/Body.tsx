@@ -9,10 +9,10 @@ function Body() {
                 <div className="h-[400px] w-full max-w-[353px] rounded-[20px] bg-[url(/home/body1.png)] bg-cover bg-no-repeat bg-center shadow-[#d9d9d9] shadow-[-30px_20px]" />
                 <div className="w-full max-w-[729px] mt-4 flex flex-col gap-6">
                     <div className="flex flex-col gap-4">
-                        <p className="text-[13px] text-[#1eafaf] font-roboto">Doctor’s Profile</p>
-                        <p className="text-[32px] md:text-[39px] font-[700] font-meriweather">Welcome to my Homepage</p>
-                        <p className="text-[28px] md:text-[39px] font-[600] font-roboto">Dr. Sudhir Khanal</p>
-                        <p className="text-[18px] md:text-[22px] font-[400] leading-7 text-[#6d6c6c] font-roboto">
+                        <p className="text-[13px] text-[#1eafaf] font-roboto text-center md:text-left">Doctor’s Profile</p>
+                        <p className="text-[32px] md:text-[39px] font-[700] font-meriweather text-center md:text-left">Welcome to my Homepage</p>
+                        <p className="text-[28px] md:text-[39px] font-[600] font-roboto text-center md:text-left">Dr. Sudhir Khanal</p>
+                        <p className="text-[18px] md:text-[22px] font-[400] leading-7 text-[#6d6c6c] font-roboto text-center md:text-left">
                             Dr. Sudhir Khanal is a distinguished global health expert currently serving as the Regional Adviser for Accelerated Disease Control at the World Health Organization, South-East Asia Region (WHO SEARO). In addition to his role at WHO, he contributes to academia as an Affiliate Faculty Member at The George Washington University.
                         </p>
                     </div>
@@ -28,12 +28,12 @@ function Body() {
             <div className="flex flex-col lg:flex-row items-center justify-center mt-20 gap-10 lg:gap-32">
                 <div className="flex flex-col gap-6 max-w-xl">
                     <div className="flex flex-col gap-2">
-                        <p className="text-[12px] font-[400] text-[#f97a7a] font-roboto">Educational Background</p>
-                        <p className="text-[18px] md:text-[20px] font-[700] text-[#6d6c6c] font-roboto">
+                        <p className="text-[12px] font-[400] text-[#f97a7a] font-roboto text-center md:text-left">Educational Background</p>
+                        <p className="text-[18px] md:text-[20px] font-[700] text-[#6d6c6c] font-roboto text-center md:text-left">
                             Public Health Policy and Planning (International Health) at the Johns Hopkins University.
                         </p>
                     </div>
-                    <p className="text-[18px] md:text-[20px] font-[400] text-[#6d6c6c] font-roboto">
+                    <p className="text-[18px] md:text-[20px] font-[400] text-[#6d6c6c] font-roboto text-center md:text-left">
                         He earned his PhD through international programs at Universidad Azteca (Azteca University) and has pursued advanced studies in Public Health Policy and Planning (International Health) at the Johns Hopkins University.
                     </p>
                     <Image src={'/home/bottom.png'} alt='Education' height={123} width={485} />

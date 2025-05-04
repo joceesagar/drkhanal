@@ -4,7 +4,7 @@ function FamilyPage() {
     return (
         <div className="flex flex-col">
             {/* TITLE */}
-            <div className="h-[200px] sm:h-[300px] md:h-[396px] bg-[#b91414] text-white flex flex-col justify-center pl-6 sm:pl-12 md:pl-[47px]">
+            <div className="h-[200px] sm:h-[300px] md:h-[396px] bg-[#b91414] text-white flex flex-col justify-center pl-6 sm:pl-12 md:pl-[47px] text-center md:text-left">
                 <p className="text-4xl sm:text-5xl md:text-[57px] font-inter font-[700]">Photo Gallery</p>
                 <p className="text-xl sm:text-2xl md:text-[35px] font-inter font-[400]">Best moments captured</p>
             </div>
